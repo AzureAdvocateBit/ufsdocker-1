@@ -139,7 +139,34 @@ Start command
 
 (To export: docker save microsoft/aspnetcore:2.1 -o microsoft_aspnetcore_2.1.tar)
 
-
 docker load < microsoft_aspnetcore-build_2.1.tar
 docker load < microsoft_aspnetcore-build_latest.tar
 docker load < microsoft_aspnetcore_2.1.tar
+
+
+
+### Appendix C - Installation
+
+
+- GIT and GIT bash for windows 
+  - <https://git-scm.com/download/win> 
+
+- .net core 2.1.2 sdk
+  - <https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.302-windows-x64-installer>
+
+- Docker for windows
+  - <https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>
+  - Remove TLS** security (under Docker-->Settings --> "general ")
+  - Enable drive sharing (under Docker-->Settings --> "Shared Drives")
+
+- Portainer (windows release)
+  - <https://github.com/portainer/portainer/releases/download/1.18.1/portainer-1.18.1-windows-amd64.tar.gz>
+  - **Unzip **and **extract** to C:\Program Files\Docker\portainer
+
+- Visual studio **code** 1.25.1+ with the following plugins:
+  - C# for Visual Studio Code (published by Microsoft) (named ms-vscode.csharp)
+  - Docker for Visual Studio code (published by Microsoft) (named peterjausovec.vscode-docker)
+
+- Dotnet samples for Docker
+  - git clone <https://github.com/dotnet/dotnet-docker/>       
+  - Follow the steps in the root readme.md to build the samples.
