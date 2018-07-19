@@ -207,8 +207,8 @@ docker load < microsoft_aspnetcore_2.0.tar
 
 - **Docker for windows**
   - <https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>
-  - Remove TLS security (under Docker-->Settings --> "general ")
-  - Enable drive sharing (under Docker-->Settings --> "Shared Drives")
+  - Remove **TLS** **security** (under Docker-->Settings --> "general ")
+  - Enable **drive sharing** (under Docker-->Settings --> "Shared Drives")
 
 - **Portainer** (windows release)
   - <https://github.com/portainer/portainer/releases/download/1.18.1/portainer-1.18.1-windows-amd64.tar.gz>
