@@ -155,13 +155,26 @@ ENTRYPOINT bin/my-start-script.sh
 ​	
 ### Appendix B - Importing a docker image if you have bandwidth issues
 
+
+
+Current | Upgrade
+--------|--------------
+`microsoft/aspnetcore:1.0`<br>`microsoft/aspnetcore:1.1`<br>`microsoft/aspnetcore:2.0` | `microsoft/dotnet:2.1-aspnetcore-runtime`
+`microsoft/aspnetcore-build:1.0`<br>`microsoft/aspnetcore-build:1.1`<br>`microsoft/aspnetcore-build:2.0` | `microsoft/dotnet:2.1-sdk`
+
 **To export:**
 
 ```bash
 docker save microsoft/dotnet:2.1-sdk  -o microsoft_dotnet_2.1-sdk.tar
+docker save microsoft/dotnet:2.0-sdk  -o microsoft_dotnet_2.0-sdk.tar
+
 docker save microsoft/dotnet:2.1-aspnetcore-runtime  -o microsoft_dotnet_2.1-aspnetcore-runtime.tar
 docker save microsoft/dotnet:2.1-runtime-alpine  -o microsoft_dotnet_2.1-runtime-alpine.tar
 docker save microsoft/dotnet:2.1-runtime  -o microsoft_dotnet_2.1-runtime.tar
+docker save microsoft/dotnet:2.0-runtime  -o microsoft_dotnet_2.0-runtime.tar
+
+docker save microsoft/aspnetcore-build:2.0 -o microsoft_aspnetcore-build_2.0.tar
+docker save microsoft/aspnetcore:2.0 -o microsoft_aspnetcore_2.0.tar
 ```
 
 
@@ -170,9 +183,15 @@ docker save microsoft/dotnet:2.1-runtime  -o microsoft_dotnet_2.1-runtime.tar
 
 ```bash
 docker load < microsoft_dotnet_2.1-sdk.tar
+docker load < microsoft_dotnet_2.0-sdk.tar
+
 docker load < microsoft_dotnet_2.1-aspnetcore-runtime.tar
 docker load < microsoft_dotnet_2.1-runtime-alpine.tar
-docker load <  microsoft_dotnet_2.1-runtime.tar
+docker load < microsoft_dotnet_2.1-runtime.tar
+docker load < microsoft_dotnet_2.0-runtime.tar
+
+docker load < microsoft_aspnetcore-build_2.0.tar
+docker load < microsoft_aspnetcore_2.0.tar
 ```
 
 
