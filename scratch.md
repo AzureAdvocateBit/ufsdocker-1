@@ -2,7 +2,8 @@
 
 https://docs.microsoft.com/en-us/dotnet/core/docker/docker-basics-dotnet-core
 
-##open bash
+-->open bash
+
 ```bash
 cd /c/projects/docker
 

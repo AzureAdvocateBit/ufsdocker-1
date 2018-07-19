@@ -14,6 +14,11 @@ https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/cont
 
 https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries
 
+#### Using Portainer to manage Containers
+
+https://portainer.io/overview.html
+
+
 
 # Labs
 
@@ -38,9 +43,7 @@ https://github.com/dotnet/dotnet-docker/blob/master/samples/dotnetapp/dotnet-doc
 
 https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images
 
-#### Using Portainer to manage Containers
 
-https://portainer.io/overview.html
 
 #### Introduction to the ASP.net Core samples
 
@@ -196,7 +199,7 @@ docker load < microsoft_aspnetcore_2.0.tar
 
 
 
-### Appendix C - Installation
+### Appendix C - Installation requirements
 
 
 - **GIT and GIT bash for windows** 
@@ -207,6 +210,7 @@ docker load < microsoft_aspnetcore_2.0.tar
 
 - **Docker for windows**
   - <https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>
+  - Install Linux containers
   - Remove **TLS** **security** (under Docker-->Settings --> "general ")
   - Enable **drive sharing** (under Docker-->Settings --> "Shared Drives")
 
