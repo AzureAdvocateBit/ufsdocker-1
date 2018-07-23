@@ -25,10 +25,10 @@ docker run --rm dotnetapp-dev Hello from Docker
 -->open bash
 
 ```bash
-cd /c/projects/docker/dotnet-docker/samples/dotnetapp/dotnetapp
+cd /c/projects/docker/ufs/dotnet-docker/samples/dotnetapp/dotnetapp
 dotnet run
 
-cd /c/projects/docker/dotnet-docker/samples/dotnetapp/
+cd /c/projects/docker/ufs/dotnet-docker/samples/dotnetapp/
 
 docker build -t dotnetapp .
 docker run --rm dotnetapp Hello .NET Core from Docker
@@ -44,13 +44,13 @@ winpty docker run --rm -it dotnetapp:test
 -->open command prompt
 
 ```bash
-cd C:\projects\docker\dotnet-docker\samples\dotnetapp
+cd C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp
 
-docker run --rm -it -v C:\projects\docker\dotnet-docker\samples\dotnetapp:/app/ -w /app/tests microsoft/dotnet:2.1-sdk dotnet watch run
+docker run --rm -it -v C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp:/app/ -w /app/tests microsoft/dotnet:2.1-sdk dotnet watch run
 
-docker run --rm -it -v C:\projects\docker\dotnet-docker\samples\dotnetapp:/app/ -w /app/tests microsoft/dotnet:2.1-sdk dotnet watch test
+docker run --rm -it -v C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp:/app/ -w /app/tests microsoft/dotnet:2.1-sdk dotnet watch test
 
-docker run --rm -v C:\projects\docker\dotnet-docker\samples\dotnetapp:/app -w /app/dotnetapp microsoft/dotnet:2.1-sdk dotnet publish -c Release -o out
+docker run --rm -v C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp:/app -w /app/dotnetapp microsoft/dotnet:2.1-sdk dotnet publish -c Release -o out
 ```
 
 
@@ -60,15 +60,15 @@ docker run --rm -v C:\projects\docker\dotnet-docker\samples\dotnetapp:/app -w /a
 
 ##Run locally
 ```bash
-cd C:\projects\docker\dotnet-docker\samples\aspnetapp\aspnetapp
+cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp\aspnetapp
 dotnet run
 ```
 
-
+-->http://localhost:5000
 
 ##Build docker
 ```bash
-cd C:\projects\docker\dotnet-docker\samples\aspnetapp
+cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp
 docker build -t aspnetapp .
 docker run --name aspnetcore_sample --rm -it -p 8000:80 aspnetapp
 ```
@@ -79,7 +79,8 @@ docker run --name aspnetcore_sample --rm -it -p 8000:80 aspnetapp
 #Develop ASP.NET Core Applications in a Container
 
 ```bash
-docker run --rm -it -p 8000:80 -v C:\projects\docker\dotnet-docker\samples\aspnetapp:/app/ -w /app/aspnetapp microsoft/dotnet:2.1-sdk dotnet watch run
+cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp
+docker run --rm -it -p 8000:80 -v C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp:/app/ -w /app/aspnetapp microsoft/dotnet:2.1-sdk dotnet watch run
 ```
 
 
