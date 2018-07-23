@@ -57,7 +57,7 @@ cd c:\projects\docker\ufs\dotnet-docker\samples\dotnetapp\
 docker build -t dotnetapp .
 docker run --rm dotnetapp Hello .NET Core from Docker
 docker build --target testrunner -t dotnetapp:test .
-winpty docker run --rm -it dotnetapp:test
+docker run --rm -it dotnetapp:test
 ```
 
 
