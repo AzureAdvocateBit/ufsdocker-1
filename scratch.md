@@ -2,18 +2,42 @@
 
 https://docs.microsoft.com/en-us/dotnet/core/docker/docker-basics-dotnet-core
 
--->open bash
+-->open command prompt
 
 ```bash
-cd /c/projects/docker
+cd c:\projects\docker
 
+mkdir HelloWorld
+cd HelloWorld
 dotnet new console
 dotnet run
 
 dotnet publish -c Release -o out
+```
 
+
+
+-->create a new Dockerfile
+
+```yaml
+FROM microsoft/dotnet:2.1-sdk
+WORKDIR /app
+
+# copy csproj and restore as distinct layers
+COPY *.csproj ./
+RUN dotnet restore
+
+# copy and build everything else
+COPY . ./
+RUN dotnet publish -c Release -o out
+ENTRYPOINT ["dotnet", "out/HelloWorld.dll"]
+```
+
+-->open command prompt
+
+```bash
 docker build -t dotnetapp-dev .
-docker run --rm dotnetapp-dev Hello from Docker
+docker run --rm dotnetapp-dev
 ```
 
 
@@ -22,13 +46,13 @@ docker run --rm dotnetapp-dev Hello from Docker
 #Samples
 
 #.NET Core Docker Sample
--->open bash
+-->open command prompt
 
 ```bash
-cd /c/projects/docker/ufs/dotnet-docker/samples/dotnetapp/dotnetapp
+cd c:\projects\docker\ufs\dotnet-docker\samples\dotnetapp\dotnetapp
 dotnet run
 
-cd /c/projects/docker/ufs/dotnet-docker/samples/dotnetapp/
+cd c:\projects\docker\ufs\dotnet-docker\samples\dotnetapp\
 
 docker build -t dotnetapp .
 docker run --rm dotnetapp Hello .NET Core from Docker
