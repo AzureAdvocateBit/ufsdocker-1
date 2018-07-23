@@ -75,11 +75,11 @@ docker run --rm dotnetapp-dev
 
 https://github.com/dotnet/dotnet-docker/tree/master/samples/dotnetapp
 
-
-
 -->open command prompt
 
 ```bash
+git clone https://github.com/dotnet/dotnet-docker/
+
 cd c:\projects\docker\ufs\dotnet-docker\samples\dotnetapp\dotnetapp
 dotnet run
 
