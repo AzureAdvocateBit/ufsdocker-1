@@ -117,7 +117,7 @@ docker run --rm -v C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp:/app -
 
 https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images
 
-
+-->open command prompt
 
 ```bash
 cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp\aspnetapp
@@ -130,7 +130,7 @@ dotnet run
 
 https://github.com/dotnet/dotnet-docker/tree/master/samples/aspnetapp
 
-
+-->open command prompt
 
 ```bash
 cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp
@@ -144,7 +144,7 @@ docker run --name aspnetcore_sample --rm -it -p 8000:80 aspnetapp
 
 https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnet-docker-dev-in-container.md
 
-
+-->open command prompt
 
 ```bash
 cd C:\projects\docker\ufs\dotnet-docker\samples\aspnetapp
