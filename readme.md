@@ -77,6 +77,9 @@ https://github.com/dotnet/dotnet-docker/tree/master/samples/dotnetapp
 
 Download the ZIP or Clone the samples repository
 Zip - https://github.com/dotnet/dotnet-docker/archive/master.zip
+
+or
+
 GIT - git clone https://github.com/dotnet/dotnet-docker/
 
 -->open command prompt
