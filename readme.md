@@ -78,7 +78,9 @@ https://github.com/dotnet/dotnet-docker/tree/master/samples/dotnetapp
 -->open command prompt
 
 ```bash
-git clone https://github.com/dotnet/dotnet-docker/
+Download the ZIP or Clone the samples repository
+Zip - https://github.com/dotnet/dotnet-docker/archive/master.zip
+GIT - git clone https://github.com/dotnet/dotnet-docker/
 
 cd c:\projects\docker\ufs\dotnet-docker\samples\dotnetapp\dotnetapp
 dotnet run
