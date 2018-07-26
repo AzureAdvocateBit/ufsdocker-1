@@ -324,7 +324,7 @@ docker load < microsoft_aspnetcore_2.0.tar
 
 - **Portainer** (windows release)
   - <https://github.com/portainer/portainer/releases/download/1.18.1/portainer-1.18.1-windows-amd64.tar.gz>
-  - **Unzip **and **extract** to C:\Program Files\Docker\portainer
+  - **Unzip** and **extract** to C:\Program Files\Docker\portainer
 - **Kitematic**
   - https://github.com/docker/kitematic/releases/download/v0.17.3/Kitematic-0.17.3-Windows.zip
   - **Unzip** and **extract** to C:\Program Files\Docker\Kitematic
