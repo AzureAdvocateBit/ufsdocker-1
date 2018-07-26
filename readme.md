@@ -327,7 +327,7 @@ docker load < microsoft_aspnetcore_2.0.tar
   - **Unzip **and **extract** to C:\Program Files\Docker\portainer
 - **Kitematic**
   - https://github.com/docker/kitematic/releases/download/v0.17.3/Kitematic-0.17.3-Windows.zip
-  - **Unzip **and **extract** to C:\Program Files\Docker\Kitematic
+  - **Unzip** and **extract** to C:\Program Files\Docker\Kitematic
 - **Visual studio code** ( version 1.25.1+) with the following plugins:
   - C# for Visual Studio Code (published by Microsoft) (named ms-vscode.csharp)
   - Docker for Visual Studio code (published by Microsoft) (named peterjausovec.vscode-docker)
