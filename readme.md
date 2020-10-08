@@ -1,18 +1,18 @@
 # Introduction to Containers and Docker
 
-https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/
+https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/?WT.mc_id=ufsdocker-github-ropreddy
 
 # What is Docker?
 
-https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined
+https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/docker-defined?WT.mc_id=ufsdocker-github-ropreddy
 
 ### Terminology
 
-https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-terminology
+https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/docker-terminology?WT.mc_id=ufsdocker-github-ropreddy
 
 ### Docker containers, images, and registries
 
-https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries
+https://docs.microsoft.com/dotnet/standard/microservices-architecture/container-docker-introduction/docker-containers-images-registries?WT.mc_id=ufsdocker-github-ropreddy
 
 #### Using Portainer to manage Containers
 
@@ -31,7 +31,7 @@ https://kitematic.com/docs/
 
 ### **Dotnet console Applications** 
 
-https://docs.microsoft.com/en-us/dotnet/core/docker/docker-basics-dotnet-core
+https://docs.microsoft.com/dotnet/core/docker/docker-basics-dotnet-core?WT.mc_id=ufsdocker-github-ropreddy
 
 
 
@@ -125,7 +125,7 @@ docker run --rm -v C:\projects\docker\ufs\dotnet-docker\samples\dotnetapp:/app -
 
 ### **ASP.net Core Applications** 
 
-https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images
+https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images?WT.mc_id=ufsdocker-github-ropreddy
 
 -->open command prompt
 
@@ -314,7 +314,7 @@ docker load < microsoft_aspnetcore_2.0.tar
   - <https://git-scm.com/download/win> 
 
 - **.net core 2.1.2 sdk**
-  - <https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.302-windows-x64-installer>
+  - <https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.302-windows-x64-installer?WT.mc_id=ufsdocker-github-ropreddy>
 
 - **Docker for windows**
   - <https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>
